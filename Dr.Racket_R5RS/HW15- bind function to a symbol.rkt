@@ -21,36 +21,8 @@
 
 ;Bind a function to the symbol oneRoot to calculate one
 ;of the roots of a quadratic equation
-(display "\n")
-(display "\n")
-(display "Equation 1")
-(define a -0.618)
-(define b  1.618)
-(define c  1.732)
-(display "\n")
-(display "Testing Root1 With Lambda: ")
-(define oneRoot (lambda (root) (+(* a (expt root 2)) (* b root) c)))
-(display (oneRoot -0.8160810895768214))
-(display "\n")
-(display "Testing Root2 With Lambda: ")
-(define oneRoot (lambda (root) (+(* a (expt root 2)) (* b root) c)))
-(display (oneRoot 3.4342040669230998))
+(display "\n")(display "\n")
+(define oneRoot (lambda (a b c) (/ (+ (- b) (sqrt (- (expt b 2) (* 4 a c)))) (* 2 a))))
+(display "The root is: ")(display (oneRoot -.618 1.618 1.732))
 
-
-(display "\n")
-(display "\n")
-(display "Equation 1")
-(define a 2.71828)
-(define b 7.64)
-(define c 1.616)
-(display "\n")
-(display "Testing Root3 With Lambda: ")
-(define oneRoot (lambda (root) (+(* a (expt root 2)) (* b root) c)))
-(display (oneRoot -0.23040651445849258))
-(display "\n")
-(display "Testing Root4 With Lambda: ")
-(define oneRoot (lambda (root) (+(* a (expt root 2)) (* b root) c)))
-(display (oneRoot -2.580194306648972))
-                    
-                    
                 
