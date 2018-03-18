@@ -1,0 +1,11 @@
+C$ VS .Net
+
+- C-Sharp is a programming language
+- .NET is a framework for building applications on Windows
+
+.NET
+- Common Language Runtime
+- Class Library
+
+
+Common Language Runtime
