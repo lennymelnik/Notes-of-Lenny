@@ -1,0 +1,27 @@
+; Write a function to compute the average of two values
+(define average (lambda (num1 num2) (/ (+ num1 num2) 2)))
+(define trapeziodArea
+  (lambda (base1 base2 height)(*(average base1 base2) height)))
+
+; Question 1
+;Full Code
+(define circleArea_fromRadius 
+  (lambda (radius)
+    (* 3.14 (expt radius 2))
+    ))
+; test it
+(display (circleArea_fromRadius 5))
+
+;the invocation of circleArea_fromRadius
+(circleArea_fromRadius 5)
+;the invocation of the built-in display procedure
+(display (circleArea_fromRadius 5))
+;the value(s) of the argument(s) from the invocation of circleArea_fromRadius
+5
+;the value(s) of the argument(s) from the invocation of the display procedure
+78.5
+;the parameter(s) of circleArea_fromRadius
+(radius)
+;the instruction(s) of circleArea_fromRadius
+(* 3.14 (expt radius 2))
+;the last value computed by circleArea_fromRadius
