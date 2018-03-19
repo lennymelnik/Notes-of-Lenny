@@ -1,0 +1,11 @@
+Whats a Primary Key?
+
+- Uniquely identifies a row or record
+
+- Each Primary Key must be unique to the row
+
+- It must be given a value when the row is created and that value can't be NULL
+
+- THe original value can't be changed
+
+- It's best to auto incrrement the value of he key

@@ -1,0 +1,13 @@
+Atomic Tbales & Table Templating
+
+- Every table should focus on describing just one thing
+
+- After you decide what one thing your table will describe, then decide what things you need to descibe that thing
+
+- Write out all the ways to descibe that thing and if any of those things requires multiple inputs, pull them out
+
+- Don't have mulitple columns witht he same sort of information
+
+- Don't include muliple values in one cell
+
+- Normalized values

@@ -1,0 +1,9 @@
+CHAR: a character string with a fixed length
+
+VARCHAR: a character sting with a length thats variable
+
+BLOB: can contain 2^16 bytes of data
+
+ENUM: A character string that has a limited number of total values which you must define.
+
+SET: A list of legal possible character strings. Unlie ENUM, a SET can contain multiple values in comparison to the one legal value with ENUM

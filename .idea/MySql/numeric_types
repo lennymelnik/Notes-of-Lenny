@@ -1,0 +1,15 @@
+Numeric Types
+
+- TINYINT: 127 to -128
+
+- SMALLINT: 32,768 to -32,767
+
+- MEDIUM INT: 8,388,608 to -8,388,608
+
+- INT: 2^31 to -2^31 - 1
+
+- BIGIN: 2^63 to -2^63 - 1
+
+- FLOAT: Devimal spaces, 1.1E38 to -1.1E38
+
+- DOUBLE: Decimal spaces, 1.7E308 to -1.7E308
