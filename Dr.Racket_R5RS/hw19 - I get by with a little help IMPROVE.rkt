@@ -27,9 +27,9 @@
 ;Q3 Target area
 
     (define targetArea (lambda (innermostCircleRadius) (+
-                                                        (-(circleArea_fromRadius (* 6 innermostCircleRadius)) (circleArea_fromRadius (* 5 innermostCircleRadius))) ;The largest Ring
-                                                        (-(circleArea_fromRadius (* 4 innermostCircleRadius)) (circleArea_fromRadius (* 3 innermostCircleRadius))) ;The Second Ring
-                                                        (-(circleArea_fromRadius (* 3 innermostCircleRadius)) (circleArea_fromRadius innermostCircleRadius)) ;The inner most ring
+                                                        (annulusArea (* 6 innermostCircleRadius) (* 5 innermostCircleRadius)) ;The largest Ring
+                                                        (annulusArea (* 4 innermostCircleRadius) (* 3 innermostCircleRadius)) ;The Second Ring
+                                                        (annulusArea (* 3 innermostCircleRadius) innermostCircleRadius) ;The inner most ring
                                                         )))
 
     (display (targetArea 4))
