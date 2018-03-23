@@ -22,14 +22,18 @@
     (display "debug radius=") (display radius) (display "\n")
     (* 3.14 (expt radius 2))))
 
-(define annulusArea (lambda (circle2 circle1) (- (circleArea_fromRadius circle2) (circleArea_fromRadius circle1))))
+(define annulusArea (lambda (outercircle innercircle)
+                      (-
+                       (circleArea_fromRadius outercircle)
+                       (circleArea_fromRadius innercircle))
+                      ))
 
 ;Q3 Target area
 
     (define targetArea (lambda (innermostCircleRadius) (+
                                                         (annulusArea (* 6 innermostCircleRadius) (* 5 innermostCircleRadius)) ;The largest Ring
                                                         (annulusArea (* 4 innermostCircleRadius) (* 3 innermostCircleRadius)) ;The Second Ring
-                                                        (annulusArea (* 3 innermostCircleRadius) innermostCircleRadius) ;The inner most ring
+                                                        (annulusArea (* 2 innermostCircleRadius) innermostCircleRadius) ;The inner most ring
                                                         )))
 
     (display (targetArea 4))
