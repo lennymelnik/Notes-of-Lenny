@@ -1,0 +1,20 @@
+﻿Pd2 hw21  2018-03-27                                                                         Leonard Melnik
+
+
+
+
+0.  Billy has 10 cookies, the wants to distribute them evenly among his three friends. If the can only give whole cookies, how many cookies can each friend get?
+(quotient 10 3)
+
+
+1. If you have 10 dollars and you want to play a game that costs 3 dollars. How many games can you play?
+(quotient 10 3)
+
+
+2.Billy has 10 cookies, the wants to distribute them evenly among his three friends. If the can only give whole cookies, how many does he have left after distributing?
+(modulo 10 3)
+
+
+3. When a calculation involving modulo produces a result of zero, it is special because that means that we can get an exact value.
+        If you need to do 5 tasks for day, and you have 35 tasks. How many days will it take you to finish all your tasks?
+(modulo 35 5)
