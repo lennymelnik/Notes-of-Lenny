@@ -1,0 +1,5 @@
+Do the following commands to install MITMF
+
+apt-get install mitmf
+
+pip install Twisted==15.5.0
