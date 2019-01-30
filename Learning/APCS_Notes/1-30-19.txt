@@ -1,0 +1,40 @@
+
+0. What rules for polymorphism can you an the CoBo play with?
+
+
+Consider the Java Statement
+MyClass x = y;
+
+
+The following rules were filled out:
+
+
+The variable x will be assigned a reference to an object that is referred to by y, which must be of type MyClass on any sub-class of MyClass
+
+
+//Variable type is a technical term. It is what can be contained in X, to what object can X hold a reference
+
+The Variable type of x is determined by the type that precedes "X" in the declaration of X at compile time.
+
+
+//Object type is a technical term
+The Object type of x is determined by the type of the object that Y refers to at run time.
+
+
+WRITE THE RULES, it will help you understand more than hearing
+
+They don't have a lot of tricks, there is only ONE right way
+
+The compiler can only check if they have the same type or subtype
+
+ The value that gets stuck in Y is determined at run time
+
+Questions:
+Q: Is it going to check if Y refers to a class that must be a subclass during compile time or will it skip over it?
+A: It will check and make sure that a reference can be store in X
+
+Q: What is the difference between a variable type and an object type?
+A: The Variable type of X is the class that X belongs to.
+
+Q:If no one knows what is stored in Y, how will the compiler check if it is ok at compile time.
+A:
